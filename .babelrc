@@ -1,0 +1,17 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        ["module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "components": "./src/components",
+                    "views": "./src/views",
+                    "state": "./src/state",
+                    "sdk": "./src/sdk"
+                }
+            }
+        ]
+    ]
+}

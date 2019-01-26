@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": ["babel"],
+  "rules": {
+    "array-bracket-spacing": [2, "never"],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "global-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "object-curly-spacing": [2, "always"],
+    "react/jsx-curly-spacing": [2, "always"],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-indent": [2,2]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}
