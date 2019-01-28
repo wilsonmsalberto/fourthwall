@@ -74,27 +74,27 @@ const awardList = [
     nominees: [
       {
         id: 1775557,
-        type: 'people',
+        type: 'person',
         movie: 426426,
       },
       {
         id: 515,
-        type: 'people',
+        type: 'person',
         movie: 340613,
       },
       {
         id: 39187,
-        type: 'people',
+        type: 'person',
         movie: 375262,
       },
       {
         id: 237405,
-        type: 'people',
+        type: 'person',
         movie: 332562,
       },
       {
         id: 55536,
-        type: 'people',
+        type: 'person',
         movie: 401847,
       },
     ],
