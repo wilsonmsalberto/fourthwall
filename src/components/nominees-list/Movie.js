@@ -9,17 +9,18 @@ import { connect } from 'react-redux';
 import * as selectors from 'state/movies/selectors';
 
 // Components
-import Image from 'components/image/Image';
+import { Card, CardImage, CardTitle } from 'components/card';
 
 const Movie = ({ imageUrl, title }) => (
-  <article>
-    <Image
-      url={ imageUrl }
-      alt={ title }
-      size="w500"
-    />
-    <h3>{title}</h3>
-  </article>
+  <Card>
+    <>
+      <CardImage
+        url={ imageUrl }
+        alt={ title }
+      />
+      <CardTitle title={ title } />
+    </>
+  </Card>
 );
 
 Movie.propTypes = {

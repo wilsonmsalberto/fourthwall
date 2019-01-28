@@ -27,7 +27,7 @@ export const getImageProperties = (state) => {
 export const getImageBaseUrl = (state) => {
   const imageProperties = getImageProperties(state);
 
-  return imageProperties.secure_base_url;
+  return imageProperties ? imageProperties.secure_base_url : 'https://image.tmdb.org/t/p/';
 };
 
 /**

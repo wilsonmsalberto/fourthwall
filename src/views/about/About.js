@@ -1,7 +1,10 @@
 import React from 'react';
 
-import styles from './About.css';
+// Styles
+import styled from '@emotion/styled';
 
-const About = () => (<div className={ styles.title }>About</div>);
+const About = styled.div`
+  color: orange;
+`;
 
-export default About;
+export default () => (<About>About</About>);

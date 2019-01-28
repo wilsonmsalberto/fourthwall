@@ -6,16 +6,21 @@ import Award from 'components/award/Award';
 import awardList from 'sdk/awardList';
 
 // Styles
-import styles from './Home.css';
+import styled from '@emotion/styled';
+
+const Main = styled.main`
+  color: blue;
+`;
 
 const Home = () => (
-  <main className={ styles.title }>
+  <Main>
+    Home
     {
       awardList.map(award => (
         <Award key={ award.id } award={ award } />
       ))
     }
-  </main>
+  </Main>
 );
 
 export default connect(state => state)(Home);

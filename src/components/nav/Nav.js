@@ -1,13 +1,15 @@
 import React from 'react';
-import Link from 'next/link';
+import Link from 'components/link/Link';
 
 export default () => (
   <div>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    <Link href="/about">
-      <a>About</a>
-    </Link>
+    <Link
+      href="/"
+      linkText="Home"
+    />
+    <Link
+      href="/about"
+      linkText="About"
+    />
   </div>
 );

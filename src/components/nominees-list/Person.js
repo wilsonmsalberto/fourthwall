@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import * as selectors from 'state/persons/selectors';
 
 // Components
-import Image from 'components/image/Image';
+import { Card, CardImage, CardTitle } from 'components/card';
 
 class Person extends Component {
     static propTypes = {
@@ -29,15 +29,16 @@ class Person extends Component {
     render() {
       const { imageUrl, title } = this.props;
       return (
-        <article>
-          <Image
-            url={ imageUrl }
-            alt={ title }
-            size="w500"
-          />
-          <h3>{title}</h3>
-          {/* <p>{`in ${person.movie}`}</p> */}
-        </article>
+        <Card>
+          <>
+            <CardImage
+              url={ imageUrl }
+              alt={ title }
+            />
+            <CardTitle title={ title } />
+            {/* <p>{`in ${person.movie}`}</p> */}
+          </>
+        </Card>
       );
     }
 }

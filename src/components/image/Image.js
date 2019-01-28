@@ -11,26 +11,30 @@ import { connect } from 'react-redux';
 import * as selectors from 'state/config/selectors';
 
 const Image = ({
-  baseUrl,
-  size,
   alt,
+  baseUrl,
+  className,
+  size,
   url,
 }) => (
   <img
-    src={ urlJoin(baseUrl, size, url) }
     alt={ alt }
+    className={ className }
+    src={ urlJoin(baseUrl, size, url) }
   />
 );
 
 Image.propTypes = {
-  baseUrl: PropTypes.string,
-  size: PropTypes.string,
   alt: PropTypes.string.isRequired,
+  baseUrl: PropTypes.string,
+  className: PropTypes.string,
+  size: PropTypes.string,
   url: PropTypes.string.isRequired,
 };
 
 Image.defaultProps = {
   baseUrl: 'https://image.tmdb.org/t/p/',
+  className: '',
   size: 'original',
 };
 
