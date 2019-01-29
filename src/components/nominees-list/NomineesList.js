@@ -13,10 +13,11 @@ const List = styled.ul`
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  padding: 1rem;
 `;
 
 const ListItem = styled.li`
-  margin: 0 1rem;
+  margin: 0 .5rem;
   flex: 0 0 auto;
 
   &:first-of-type {

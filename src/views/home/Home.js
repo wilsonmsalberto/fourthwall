@@ -9,12 +9,11 @@ import awardList from 'sdk/awardList';
 import styled from '@emotion/styled';
 
 const Main = styled.main`
-  color: blue;
+  padding-top: 1rem;
 `;
 
 const Home = () => (
   <Main>
-    Home
     {
       awardList.map(award => (
         <Award key={ award.id } award={ award } />

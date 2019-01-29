@@ -9,7 +9,12 @@ import { connect } from 'react-redux';
 import * as selectors from 'state/persons/selectors';
 
 // Components
-import { Card, CardImage, CardTitle } from 'components/card';
+import {
+  Card,
+  CardDescription,
+  CardImage,
+  CardTitle,
+} from 'components/card';
 
 class Person extends Component {
     static propTypes = {
@@ -35,8 +40,10 @@ class Person extends Component {
               url={ imageUrl }
               alt={ title }
             />
-            <CardTitle title={ title } />
-            {/* <p>{`in ${person.movie}`}</p> */}
+            <CardDescription>
+              <CardTitle title={ title } />
+              {/* <p>{`in ${person.movie}`}</p> */}
+            </CardDescription>
           </>
         </Card>
       );

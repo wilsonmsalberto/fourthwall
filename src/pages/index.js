@@ -29,6 +29,13 @@ class HomePage extends Component {
 
     awardList.forEach((award) => {
       award.nominees.forEach((nominee) => {
+        // let count = 0;
+
+        // if (promises[count].length === 30) {
+        //   count += 1;
+        //   promises[count] = [];
+        // }
+
         const { type, id } = nominee;
 
         if (type === 'movie') {

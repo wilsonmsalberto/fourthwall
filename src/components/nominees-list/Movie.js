@@ -9,7 +9,12 @@ import { connect } from 'react-redux';
 import * as selectors from 'state/movies/selectors';
 
 // Components
-import { Card, CardImage, CardTitle } from 'components/card';
+import {
+  Card,
+  CardDescription,
+  CardImage,
+  CardTitle,
+} from 'components/card';
 
 const Movie = ({ imageUrl, title }) => (
   <Card>
@@ -18,7 +23,9 @@ const Movie = ({ imageUrl, title }) => (
         url={ imageUrl }
         alt={ title }
       />
-      <CardTitle title={ title } />
+      <CardDescription>
+        <CardTitle title={ title } />
+      </CardDescription>
     </>
   </Card>
 );

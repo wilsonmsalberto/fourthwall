@@ -10,6 +10,7 @@ import withRedux from 'next-redux-wrapper';
 import { initStore, clientState } from 'state/store';
 
 // Components
+import Head from 'components/head/Head';
 import Nav from 'components/nav/Nav';
 
 // Styles
@@ -30,6 +31,7 @@ class MyApp extends App {
     return (
       <Container>
         <Provider store={ store }>
+          <Head />
           <Nav />
           <Component { ...pageProps } />
           <Global styles={ css([emotionNormalize, GlobalStyles]) } />
