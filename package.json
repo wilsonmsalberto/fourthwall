@@ -24,7 +24,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "url-join": "^4.0.0",
-    "webpack": "^4.35.2"
+    "webpack": "^4.35.3"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.0",
