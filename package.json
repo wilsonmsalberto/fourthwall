@@ -8,7 +8,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@emotion/core": "^10.0.14",
+    "@emotion/core": "^10.0.16",
     "@emotion/styled": "^10.0.14",
     "dotenv": "^8.1.0",
     "emotion-normalize": "^10.1.0",
