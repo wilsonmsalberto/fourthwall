@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "7.13.0",
     "babel-eslint": "10.1.0",
-    "babel-plugin-emotion": "10.0.33",
+    "babel-plugin-emotion": "11.0.0",
     "babel-plugin-module-resolver": "4.1.0",
     "eslint": "7.21.0",
     "eslint-config-airbnb": "18.2.1",
